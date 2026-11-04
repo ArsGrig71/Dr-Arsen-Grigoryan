@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verify registration – Dr Arsen Grigoryan</title>
+<meta name="robots" content="noindex">
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f4f8f9;color:#16202e;margin:0;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:16px}
+  .card{background:#fff;border:2px solid #0a7c8c;border-radius:14px;max-width:420px;width:100%;padding:24px;text-align:center}
+  h1{font-size:20px;margin:0 0 6px;color:#12305c}
+  p{margin:8px 0;line-height:1.45}
+  .reg{font-size:22px;font-weight:700;letter-spacing:1px;color:#12305c}
+  button{margin-top:14px;background:#0a7c8c;color:#fff;border:0;border-radius:24px;padding:12px 22px;font-size:16px;font-weight:600;cursor:pointer}
+  small{color:#5a6676;display:block;margin-top:14px}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Dr Arsen Grigoryan</h1>
+  <p>Opening registration details on the Ahpra public register for</p>
+  <p class="reg">MED0004028771</p>
+  <form id="f" method="post" action="https://www.ahpra.gov.au/Registration/Registers-of-Practitioners">
+    <input type="hidden" name="name-reg" value="MED0004028771">
+    <input type="hidden" name="practitioner-row-id" value="MED0004028771">
+    <button type="submit">Open registration details</button>
+  </form>
+  <small>If nothing happens, tap the button. You can also search manually at
+  ahpra.gov.au/Registration/Registers-of-Practitioners using the number above.</small>
+</div>
+<script>setTimeout(function(){document.getElementById('f').submit();},600);</script>
+</body>
+</html>
